@@ -1,0 +1,31 @@
+<mvc:View controllerName="com.doc.project1.controller.Appointment"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"  xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+           <content>
+     	<VBox class="sapUiTinyMarginTop sapUiTinyMarginBottom sapUiLargeMarginBegin" width="100%" 	alignItems="Start"
+				justifyContent="Start">
+        	<List  items="{/doctorSchedule/days}"
+              headerText="Doctor's Schedule"
+              growing="true">
+	         <StandardListItem
+              
+                  type="Active"
+                  		title="{day}"
+                      press="onDayPress"   
+                
+                >
+     <customData>
+     <core:CustomData key="day" value="{day}"/>
+   </customData>
+              </StandardListItem>
+		
+	
+	</List>
+                     
+                        <Button id="idBtn" text="Book Appointment" class="sapUiSmallMarginBegin" press="onBookAppointment"/>
+                    </VBox>
+
+    </content>
+    </Page>
+</mvc:View>

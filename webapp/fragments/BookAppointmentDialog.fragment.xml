@@ -1,0 +1,29 @@
+<!-- BookAppointmentDialog.fragment.xml -->
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <Dialog
+        id="bookAppointmentDialog"
+        title="Book Appointment">
+        <content>
+            <f:SimpleForm
+                id="appointmentForm"
+                layout="ResponsiveGridLayout"
+                editable="true">
+                <f:content>
+                    <Label text="Patient Name" />
+                    <Input id="patientNameInput" />
+                    <Label text="Description of Health Issue" />
+                    <TextArea id="descriptionInput" rows="4" />
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <beginButton>
+            <Button text="Book" press="onBook" />
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onCancel" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

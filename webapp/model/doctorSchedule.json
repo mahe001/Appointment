@@ -1,0 +1,60 @@
+{
+    "days": [
+      {
+        "day": "Monday",
+        "slots": [
+          { "time": "09:00 - 09:30", "status": "Free" },
+          { "time": "09:30 - 10:00", "status": "Free" },
+          { "time": "10:00 - 10:30", "status": "Free" },
+          { "time": "10:30 - 11:00", "status": "Free" },
+          { "time": "11:00 - 11:30", "status": "Free" },
+          { "time": "11:30 - 12:00", "status": "Booked" }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          { "time": "09:00 - 09:30", "status": "Free" },
+          { "time": "09:30 - 10:00", "status": "Booked" },
+          { "time": "10:00 - 10:30", "status": "Free" },
+          { "time": "10:30 - 11:00", "status": "Free" },
+          { "time": "11:00 - 11:30", "status": "Free" },
+          { "time": "11:30 - 12:00", "status": "Free" }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          { "time": "09:00 - 09:30", "status": "Booked" },
+          { "time": "09:30 - 10:00", "status": "Free" },
+          { "time": "10:00 - 10:30", "status": "Free" },
+          { "time": "10:30 - 11:00", "status": "Free" },
+          { "time": "11:00 - 11:30", "status": "Free" },
+          { "time": "11:30 - 12:00", "status": "Free" }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          { "time": "09:00 - 09:30", "status": "Free" },
+          { "time": "09:30 - 10:00", "status": "Free" },
+          { "time": "10:00 - 10:30", "status": "Booked" },
+          { "time": "10:30 - 11:00", "status": "Free" },
+          { "time": "11:00 - 11:30", "status": "Free" },
+          { "time": "11:30 - 12:00", "status": "Free" }
+        ]
+      },
+      {
+        "day": "Friday",
+        "slots": [
+          { "time": "09:00 - 09:30", "status": "Free" },
+          { "time": "09:30 - 10:00", "status": "Free" },
+          { "time": "10:00 - 10:30", "status": "Free" },
+          { "time": "10:30 - 11:00", "status": "Free" },
+          { "time": "11:00 - 11:30", "status": "Booked" },
+          { "time": "11:30 - 12:00", "status": "Free" }
+        ]
+      }
+    ]
+  }
+  
