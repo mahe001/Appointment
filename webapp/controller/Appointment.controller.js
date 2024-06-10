@@ -62,6 +62,7 @@ var oData = {
 var oModel = new JSONModel(oData);
 this.getView().setModel(oModel);
         },
+        //select day
         onDayPress: function (oEvent) {
             
             var sDay = oEvent.getSource().data("day");
@@ -100,6 +101,7 @@ this.getView().setModel(oModel);
                      }.bind(this));
                  }
              },
+             // select a slot
         onSlotPress: function (oEvent) {
             var oContext = oEvent.getSource().getBindingContext();
             var oSlot = oContext.getObject();
@@ -114,6 +116,7 @@ this.getView().setModel(oModel);
         onCloseScheduleDialog: function () {
             this.byId("scheduleDialog").close();
         },
+        //on click of book appointment 
         onBookAppointment: function () {
             if (this._appointmentBooked === false) {
                 MessageBox.warning("Please select a slot first.");
@@ -142,8 +145,10 @@ this.getView().setModel(oModel);
         
     
         onBook: function () {
-            var sPatientName = sap.ui.getCore().byId(this.getView().getId() + "--patientNameInput").getValue();
-            var sDescription = sap.ui.getCore().byId(this.getView().getId() + "--descriptionInput").getValue();
+            var sPatientName = this.byId("patientNameInput").getValue();
+            // sap.ui.getCore().byId(this.getView().getId() + "--patientNameInput").getValue();
+            var sDescription =  this.byId("descriptionInput").getValue();
+            // sap.ui.getCore().byId(this.getView().getId() + "--descriptionInput").getValue();
 
             if (sPatientName && sDescription) {
                 var oModel = this.getView().getModel();
